@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Workers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="section">
+        <h1 class="title">Web Workers</h1>
+        <h2 class="subtitle">
+            Utilizzo applicato dei web workers per ottenere <strong>parallelamente</strong> fattoriale, numeri primi,
+            Fibonacci.
+        </h2>
+        <div class="container is-fluid">
+            <div class="notification is-info is-light">
+                Qualsiasi <strong>numero</strong> verrà elaborato con tre 'lavoratori' differenti, indipendenti l'uno
+                dall'altro nell'ascolto di eventi.
+                <a href="https://www.w3schools.com/html/html5_webworkers.asp" target="_blank">Per saperne di più sui Web
+                    Workers..</a>
+            </div>
+        </div>
+        <section class="section">
+            <div class="block">
+                <div class="field is-grouped">
+                    <div class="column">
+                        <aside class="menu">
+                            <p class="menu-label">
+                                Lavoratori
+                            </p>
+                            <ul class="menu-list">
+                                <li>
+                                    <a class="is-active" disabled>Seleziona un Web Worker</a>
+                                    <ul>
+                                        <li><a>Calcolo del risultato del fattoriale</a></li>
+                                        <li><a>Calcolo dei numeri primi</a></li>
+                                        <li><a>Calcolo della sequenza di Fibonacci</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </aside>
+                    </div>
+                    <section class="section">
+                        <div class="control is-expanded">
+                            <input class="input" type="text" placeholder="Inserisci il numero da elaborare" required>
+                        </div>
+
+                        <div class="control">
+                            <button class="button is-primary">Elabora</button>
+                        </div>
+                        <progress class="progress is-success" value="0" max="100">0%</progress>
+                    </section>
+                </div>
+        </section>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>

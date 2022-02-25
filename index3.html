@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="outer-container">
+        <div class="main-container">
+            <div class="div-title">
+                <h1>Calculate</h1>
+            </div>
+            <div class="div-input">
+                <input type="number" name="inputNumber" id="input" placeholder="Insert number..">
+            </div>
+            <div class="div-prime division">
+                <button onclick="getPrime()">Prime</button>
+                <img id="loader" style="display: none" src="./371902170_FALLING_LOADER.gif" alt="loader">
+                <p id="result-prime"></p>
+            </div>
+            <div class="div-factorial division">
+                <button onclick="getFactorial()">Factorial</button>
+                <img id="loader2" style="display: none" src="./371902170_FALLING_LOADER.gif" alt="loader">
+                <p id="result-factorial"></p>
+            </div>
+            <div class="div-fibonacci division">
+                <button onclick="getFibonacci()">Fibonacci</button>
+                <img id="loader3" style="display: none" src="./371902170_FALLING_LOADER.gif" alt="loader">                
+                <p id="result-Fibonacci"></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
